@@ -1,0 +1,21 @@
+@use "../../node_modules/sass-rem/rem"as *;
+/* Declaration Colors */
+$medium-color :#969696;
+$medium-dark-color:#646464;
+$orange-color:#FF7020;
+$zappy-zebra :#F1F2F3;
+$drop-green :#6bb75d;
+
+
+
+/* Declaration Font Property */
+$font-size-medium: rem(18px);
+$line-height-medium : 1.36;
+$font-weight-semibold:600;
+
+
+/* Map Of Background Colors */
+$color-bg:(zappy-zebra :$zappy-zebra,
+  medium-color :$medium-color);
+$color-text:(medium-color :$medium-color,
+  medium-dark-color:$medium-dark-color, );

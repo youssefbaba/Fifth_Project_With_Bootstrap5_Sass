@@ -1,0 +1,112 @@
+@use "../vendors/bootstrap"as *;
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
+@use "../vendors/bootstrap"as *;
+@use "../../node_modules/sass-rem/rem"as *;
+
+/* Start Navigation Bar */
+.navbar {
+  padding: {
+    top: rem(20px);
+    bottom: rem(20px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: {
+      top: rem(28px);
+      bottom: rem(28px);
+    }
+  }
+
+  &-nav {
+    &.icons {
+      .nav-item {
+        &:nth-child(3) {
+          .nav-link {
+            &::before {
+              content: "";
+              position: absolute;
+
+              background: {
+                color: $orange-color;
+              }
+
+              width: rem(10px);
+              height: rem(10px);
+              top: 0.75rem;
+              right: 0;
+              border: rem(2px) solid $white;
+
+              border: {
+                radius: 50%;
+              }
+            }
+          }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin: {
+            right: calc(197.292px / 8);
+          }
+        }
+
+        &:nth-child(1) {
+          @include media-breakpoint-up(lg) {
+            width: auto !important;
+          }
+        }
+      }
+
+      .nav-link {
+        @include transition-mixin(all 0.2s ease-in-out);
+
+        svg {
+          width: rem(24px);
+          height: rem(24px);
+          @include transition-mixin(all 0.2s ease-in-out);
+        }
+
+        &:hover {
+          color: $danger !important;
+
+          svg {
+            color: $danger !important;
+          }
+        }
+      }
+    }
+
+    &.links {
+      .nav-link {
+        @include transition-mixin(all 0.2s ease-in-out);
+
+        &.active,
+        &:hover {
+          color: $primary !important;
+        }
+      }
+    }
+
+    &.links,
+    &.icons {
+      .nav-item {
+        &:not(:last-child) {
+          @include media-breakpoint-up(lg) {
+            margin: {
+              right: rem(40px) !important;
+            }
+          }
+
+          @include media-breakpoint-up(xl) {
+            margin: {
+              right: rem(56px) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Navigation Bar */

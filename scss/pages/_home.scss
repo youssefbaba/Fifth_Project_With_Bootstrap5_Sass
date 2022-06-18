@@ -1,0 +1,198 @@
+@use "../../node_modules/sass-rem/rem"as *;
+@use "../abstracts/variables"as *;
+@use "../vendors/bootstrap"as *;
+@use "../abstracts/mixins"as *;
+
+/* Start Tha Products Section */
+.products {
+  padding: {
+    top: rem(120px);
+  }
+
+  &-choices {
+    margin: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+
+    gap:rem(20px) rem(32px);
+
+    @include media-breakpoint-up(lg) {
+      margin: {
+        top: rem(40px);
+        bottom: rem(56px);
+      }
+
+      gap:0 rem(56px);
+    }
+
+    &-link {
+      font: {
+        size: $font-size-medium;
+      }
+
+      @include transition-mixin(all 0.2s ease-in-out);
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $primary !important;
+      }
+    }
+  }
+
+  &-item {
+    .card {
+      cursor: pointer;
+
+      &-image {
+        .hover {
+          @include transition-mixin(all 0.5s ease-in-out);
+          transform: translateY(100%);
+        }
+      }
+
+      &-body {
+        padding: {
+          top: 1.25rem !important;
+        }
+
+        .stars {
+          svg {
+            width: rem(14px);
+            height: rem(14px);
+          }
+        }
+
+        .name,
+        .price {
+          font: {
+            size: $font-size-medium;
+          }
+        }
+      }
+
+      .new,
+      .sale {
+        top: 1rem;
+        left: 1rem;
+
+        padding: {
+          left: rem(12px);
+          right: rem(12px);
+        }
+
+        font: {
+          size: rem(14px);
+        }
+
+        letter: {
+          spacing: 1px;
+        }
+      }
+
+      &:hover {
+        .hover {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .link {
+    &:hover {
+      color: $white !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: {
+        top: rem(56px) !important;
+      }
+    }
+  }
+}
+
+/* End Tha Products Section */
+/* Start The Collection Section */
+.collection {
+  padding: {
+    top: rem(120px);
+  }
+
+  .head-section {
+    margin: {
+      bottom: rem(32px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: {
+        bottom: rem(66px);
+      }
+    }
+
+    .special-description {
+      @include media-breakpoint-up(lg) {
+        max-width: rem(420px);
+      }
+    }
+  }
+
+  &-info {
+    .head-section {
+      @include media-breakpoint-up(lg) {
+        padding: {
+          top: rem(84px) !important;
+          left: rem(67px) !important;
+        }
+      }
+
+      .title {
+        @include media-breakpoint-down(lg) {
+          font: {
+            size: rem(14px);
+          }
+        }
+      }
+
+      .sub-title {
+        font: {
+          size: rem(20px);
+        }
+
+        line: {
+          height: 1.8;
+        }
+
+        letter: {
+          spacing: normal;
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(36px);
+          }
+        }
+      }
+
+      .description {
+        @include media-breakpoint-up(lg) {
+          line: {
+            height: $line-height-medium !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-image {
+    img {
+      @include media-breakpoint-up(lg) {
+        margin: {
+          right: -0.75rem !important;
+        }
+      }
+    }
+  }
+}
+
+/* End The Collection Section */

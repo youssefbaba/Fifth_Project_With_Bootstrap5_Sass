@@ -1,0 +1,116 @@
+@use "../abstracts/variables"as *;
+@use "../../node_modules/sass-rem/rem"as *;
+@use "../vendors/bootstrap"as *;
+
+/* Start The Section Header */
+.header {
+  .landing {
+    padding: {
+      top: rem(79.967px + 48px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: {
+        top: rem(99.8632px + 38px);
+      }
+    }
+
+    .head-section {
+      .sub-title {
+        font: {
+          size: rem(36px);
+        }
+
+        line: {
+          height: 1.55;
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(60px);
+          }
+
+          line: {
+            height: $line-height-medium;
+          }
+
+          margin: {
+            bottom: 2rem;
+          }
+        }
+      }
+
+      .description {
+        font: {
+          family: 'Ubuntu', sans-serif;
+        }
+      }
+    }
+
+    .info {
+      @include media-breakpoint-up(lg) {
+        padding : {
+          top: rem(72px);
+        }
+      }
+
+      .btn {
+        margin: {
+          bottom: rem(56px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: {
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    .advantage {
+      .carousel {
+        &-item {
+          padding: {
+            bottom: rem(32px);
+          }
+
+          @include media-breakpoint-up(lg) {
+            width: calc(100% / 4);
+
+            margin: {
+              right: 0;
+            }
+
+            padding: {
+              top: rem(40px) !important;
+              bottom: rem(40px);
+            }
+          }
+
+          .title {
+            font: {
+              size: (18px);
+            }
+          }
+        }
+
+        &-indicators {
+          [data-bs-target] {
+            width: rem(10px);
+            height: rem(10px);
+          }
+
+          button {
+            &.active {
+              background: {
+                color: $primary !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End The Section Header */

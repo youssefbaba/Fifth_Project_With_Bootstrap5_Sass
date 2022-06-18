@@ -1,7 +1,26 @@
 /* Here I can Override Bootsrap's Varaibles */
 
+/* 1. Include functions first (so you can manipulate colors, SVGs, calc, etc) */
+@import "../../node_modules/bootstrap/scss/functions";
 
-$primary : lime;
+
+
+$primary :#34C3A0;
+$secondary :#F4AF46;
+$danger:#E04243;
+
+
+
+/* . Include remainder of required Bootstrap stylesheets */
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+
+// Create your own map
+$custom-gutters: (6: $spacer * 1.875);
+// Merge the maps
+$gutters: map-merge($gutters, $custom-gutters);
+
 
 
 /* Import Bootstrap */

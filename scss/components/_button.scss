@@ -1,3 +1,20 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+@use "../abstracts/variables"as *;
+@use "../../node_modules/sass-rem/rem"as *;
+@use "../vendors/bootstrap"as *;
+
+.btn {
+
+  line: {
+    height: 1.8;
+  }
+
+  padding:rem(0.5rem 2rem);
+
+  @include media-breakpoint-up(lg) {
+    padding: rem(0.75rem 2rem);
+  }
+
+  &-#{drop-green} {
+    @include button-variant($drop-green, $drop-green);
+  }
+}

@@ -5,77 +5,606 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Set Up</title>
+  <title>Fifth_Project_With_Bootstrap5_Sass</title>
   <!-- Stylesheet Css -->
   <link rel="stylesheet" href="css/home.css">
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Google Font Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Google Font Ubuntu  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Start The Section Header  -->
+  <header class="header">
+    <!-- Start The Navigation  Bar  -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-zappy-zebra">
+      <div class="container">
+        <a class="navbar-brand col-lg-2" href="#">
+          <img src="media/imgs/navigation/logo.svg" alt="logo">
+        </a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasOne" aria-controls="offcanvasOne" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <img src="media/imgs/navigation/menu.svg" alt="menu">
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasOne" aria-labelledby="offcanvasExampleOne">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark" id="offcanvasExampleOne">Menu</h5>
+            <button type="button" class="btn-close shadow-none text-dark" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-lg-row">
+            <ul class="links navbar-nav col-lg-7 align-items-lg-center order-last order-lg-first mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-capitalize text-dark fw-smb active px-lg-0" href="#"
+                  aria-current="page">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize text-dark fw-smb px-lg-0" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize text-dark fw-smb px-lg-0" href="#shop">shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize text-dark fw-smb px-lg-0" href="#location">location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize text-dark fw-smb px-lg-0" href="#contact">contact</a>
+              </li>
+            </ul>
+            <ul
+              class="icons navbar-nav col-lg-5 d-flex flex-row flex-wrap justify-content-center justify-content-lg-end align-items-center mb-2 mb-lg-0">
+              <li class="nav-item order-last order-lg-first w-100 text-center text-lg-start">
+                <a href="tel:+(62) 123 - 342" class="nav-link d-inline-block text-dark text-capitalize fw-smb px-lg-0">
+                  <span class="d-lg-none">call support : </span>
+                  <span>(62) 123 - 342</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize px-lg-0" href="#">
+                  <i class="fa-solid fa-magnifying-glass  text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize position-relative px-lg-0" href="#">
+                  <i class="fa-solid fa-bag-shopping text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize px-lg-0" href="#">
+                  <i class="fa-solid fa-user text-dark"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End The Navigation  Bar  -->
+    <!-- Start The Section Landing  -->
+    <section class="landing bg-zappy-zebra">
+      <div class="container">
+        <div class="row">
+          <div class="info col-lg-6">
+            <div class="head-section text-center text-lg-start">
+              <h2 class="title text-uppercase fw-smb lh-md text-danger mb-0">clothing online shop</h2>
+              <h3 class="sub-title text-capitalize fw-bold lh-md text-dark mt-1 mt-lg-2 mb-4">
+                people say buying is important
+              </h3>
+              <p class="description lh-lg text-medium-dark-color mb-0">
+                We are a world famous clothing store that is going to make a mark of wearing the best clothing that is
+                in the world.
+              </p>
+              <a href="#" class="btn btn-primary text-white text-capitalize fw-smb mt-5 rounded-0">
+                shop now
+              </a>
+            </div>
+          </div>
+          <div class="image col-lg-6">
+            <img src="media/imgs/landing/landing.jpg" alt="landing"
+              class="img-fluid d-block mx-auto ms-lg-auto me-lg-0">
+          </div>
+          <div class="advantage col-12">
+            <div id="carouselIndicatorsOne" class="carousel slide bg-white" data-bs-ride="carousel">
+              <div class="carousel-indicators d-lg-none mb-0 gap-1">
+                <button type="button" class="active rounded-circle bg-medium-color border-0"
+                  data-bs-target="#carouselIndicatorsOne" data-bs-slide-to="0" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button type="button" class="rounded-circle bg-medium-color border-0"
+                  data-bs-target="#carouselIndicatorsOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" class="rounded-circle bg-medium-color border-0"
+                  data-bs-target="#carouselIndicatorsOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" class="rounded-circle bg-medium-color border-0"
+                  data-bs-target="#carouselIndicatorsOne" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner row g-0">
+                <!-- Start Carousel  Item 1 -->
+                <div class="carousel-item active col-lg-3 pt-4 d-lg-block">
+                  <div class="row g-0">
+                    <div class="col-8 col-lg-12 offset-2 offset-lg-0 center-flex">
+                      <img src="media/imgs/advantage/location.svg" alt="location" class="me-3">
+                      <div>
+                        <h4 class="title fw-bold text-dark text-capitalize lh-md">free shiping</h4>
+                        <span class="description text-medium-color text-capitalize lh-md">order over $100</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Carousel  Item 1 -->
+                <!-- Start Carousel Item 2 -->
+                <div class="carousel-item col-lg-3 pt-4 d-lg-block">
+                  <div class="row g-0">
+                    <div class="col-8 col-lg-12 offset-2 offset-lg-0 center-flex">
+                      <img src="media/imgs/advantage/clock-rotate.svg" alt="location" class="me-3">
+                      <div>
+                        <h4 class="title fw-bold text-dark text-capitalize lh-md">free returns</h4>
+                        <span class="description text-medium-color text-capitalize lh-md">within 7 days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Carousel Item 2 -->
+                <!-- Start Carousel Item 3 -->
+                <div class="carousel-item col-lg-3 pt-4 d-lg-block">
+                  <div class="row g-0">
+                    <div class="col-8 col-lg-12 offset-2 offset-lg-0 center-flex">
+                      <img src="media/imgs/advantage/circle-check.svg" alt="location" class="me-3">
+                      <div>
+                        <h4 class="title fw-bold text-dark text-capitalize lh-md">100% guaranteed</h4>
+                        <span class="description text-medium-color text-capitalize lh-md">all products</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Carousel Item 3 -->
+                <!-- Start Carousel Item 4 -->
+                <div class="carousel-item col-lg-3 pt-4 d-lg-block">
+                  <div class="row g-0">
+                    <div class="col-8 col-lg-12 offset-2 offset-lg-0 center-flex">
+                      <img src="media/imgs/advantage/clock-rotate.svg" alt="location" class="me-3">
+                      <div>
+                        <h4 class="title fw-bold text-dark text-capitalize lh-md">best discount</h4>
+                        <span class="description text-medium-color text-capitalize lh-md">payment online</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Carousel Item 4 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  The Section Landing  -->
+  </header>
+  <!-- End The Section Header  -->
+  <!-- Start The Products Section  -->
+  <section class="products">
+    <div class="container">
+      <div class="head-section text-center">
+        <h2 class="title text-uppercase fw-smb lh-md text-danger mb-0">best products</h2>
+        <h3 class="sub-title text-capitalize fw-bold lh-md text-dark mt-1 mb-0">
+          featured products
+        </h3>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="products-choices text-capitalize list-unstyled d-flex justify-content-center flex-wrap">
+        <li>
+          <a href="#"
+            class="products-choices-link text-decoration-none lh-md text-medium-dark-color text-nowrap active">all</a>
+        </li>
+        <li>
+          <a href="#" class="products-choices-link text-decoration-none lh-md text-medium-dark-color text-nowrap">best
+            seller</a>
+        </li>
+        <li>
+          <a href="#"
+            class="products-choices-link text-decoration-none lh-md text-medium-dark-color text-nowrap">trending</a>
+        </li>
+        <li>
+          <a href="#" class="products-choices-link text-decoration-none lh-md text-medium-dark-color text-nowrap">new
+            arrivals</a>
+        </li>
+        <li>
+          <a href="#" class="products-choices-link text-decoration-none lh-md text-medium-dark-color text-nowrap">all
+            products</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row gx-0  gx-md-6 gy-6 gx-lg-6">
+        <!-- Start Product Item 1 -->
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/black-bag.jpg" class="card-img-top img-fluid" alt="black-bag">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">black-bag</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+              </div>
+            </div>
+            <a
+              class="new btn btn-drop-green rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">new</a>
+          </div>
+        </div>
+        <!-- End Product Item 1 -->
+        <!-- Start Product Item 2 -->
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/elite-shoses.jpg" class="card-img-top img-fluid" alt="elite-shoses">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">elite shoses</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+                <span class="discount text-decoration-line-through text-medium-color lh-md ms-2">$56.20</span>
+              </div>
+            </div>
+            <a
+              class="sale btn btn-danger rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">sale</a>
+          </div>
+        </div>
+        <!-- End Product Item 2 -->
+        <!-- Start Product Item 3 -->
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/t-shirt bamboo.jpg" class="card-img-top img-fluid" alt="t-shirt bamboo">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">t-Shirt bamboo</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+              </div>
+            </div>
+            <a
+              class="new btn btn-drop-green rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">new</a>
+          </div>
+        </div>
+        <!-- End Product Item 3 -->
+        <!-- Start Product Item 4 -->
+        <div class="products-item col-md-6 col-lg-3 d-none d-md-block">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/sunglass-premium.jpg" class="card-img-top img-fluid" alt="sunglass-premium">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">sunglass premium</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+                <span class="discount text-decoration-line-through text-medium-color lh-md ms-2">$56.20</span>
+              </div>
+            </div>
+            <a
+              class="sale btn btn-danger rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">sale</a>
+          </div>
+        </div>
+        <!-- End Product Item 4 -->
+        <!-- Start Product Item 5 -->
+        <div class="products-item col-md-6 col-lg-3 d-none d-md-block">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/black-shoes.jpg" class="card-img-top img-fluid" alt="black-shoes">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">black shoes</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+              </div>
+            </div>
+            <a
+              class="new btn btn-drop-green rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">new</a>
+          </div>
+        </div>
+        <!-- End Product Item 5 -->
+        <!-- Start Product Item 6 -->
+        <div class="products-item col-md-6 col-lg-3 d-none d-md-block">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/Blue-Cap.jpg" class="card-img-top img-fluid" alt="blue-cap">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">blue cap</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+                <span class="discount text-decoration-line-through text-medium-color lh-md ms-2">$56.20</span>
+              </div>
+            </div>
+            <a
+              class="new btn btn-drop-green rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">new</a>
+          </div>
+        </div>
+        <!-- End Product Item 6 -->
+        <!-- Start Product Item 7 -->
+        <div class="products-item col-md-6 col-lg-3 d-none d-lg-block">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/brown-shoes.jpg" class="card-img-top img-fluid" alt="brown-shoes">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">brown shoes</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+              </div>
+            </div>
+            <a
+              class="new btn btn-drop-green rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">new</a>
+          </div>
+        </div>
+        <!-- End Product Item 7 -->
+        <!-- Start Product Item 8 -->
+        <div class="products-item col-md-6 col-lg-3 d-none d-lg-block">
+          <div class="card position-relative">
+            <div class="card-image position-relative overflow-hidden">
+              <img src="media/imgs/products/free-model.jpg" class="card-img-top img-fluid" alt="free-model">
+              <div
+                class="hover bg-white border-bottom border-4 border-primary p-3 position-absolute d-flex justify-content-between bottom-0 start-0 end-0">
+                <img src="media/imgs/products/heart.svg" alt="heart">
+                <span class="title text-uppercase fw-smb text-dark lh-md">add to chart</span>
+                <img src="media/imgs/products/arrow-left-arrow-right.svg" alt="arrow-left-arrow-right">
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="stars-raiting d-flex align-items-center">
+                <div class="stars d-flex gap-2">
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                  <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <span class="raiting text-medium-color lh-md ms-2">(1.230)</span>
+              </div>
+              <span class="name text-capitalize text-medium-dark-color d-inline-block my-2">free-model</span>
+              <div class="price-discount d-flex align-items-center">
+                <strong class="price text-dark">$13.20</strong>
+                <span class="discount text-decoration-line-through text-medium-color lh-md ms-2">$56.20</span>
+              </div>
+            </div>
+            <a
+              class="sale btn btn-danger rounded-0 text-uppercase fw-smb text-white lh-md position-absolute py-2">sale</a>
+          </div>
+        </div>
+        <!-- End Product Item 8 -->
+        <a href="#"
+          class="link col-auto btn btn-outline-primary text-capitalize fw-smb rounded-0 mt-5 mx-auto center-flex">
+          <span>see all products</span>
+          <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="container"></div> -->
+  </section>
+  <!-- End The Products Section  -->
+  <!-- Start The Collection Section  -->
+  <section class="collection">
+    <div class="container">
+      <div class="head-section d-lg-flex  justify-content-between align-items-center">
+        <div>
+          <h2 class="title text-uppercase fw-smb lh-md text-danger mb-0">you will love it</h2>
+          <h3 class="sub-title text-capitalize fw-bold lh-md text-dark mt-2 mb-4 mb-lg-0">
+            our collection
+          </h3>
+        </div>
+        <p class="description special-description lh-lg text-medium-dark-color mb-0">
+          This is a collection of products we have, take a look and make a purchase.
+        </p>
+      </div>
+    </div>
+    <div class="container bg-zappy-zebra">
+      <div class="row g-0">
+        <div class="collection-info col-lg-6">
+          <div class="head-section pt-5 ps-4 mb-0">
+            <h2 class="title text-uppercase fw-normal lh-md text-danger mb-0">#New arrivals</h2>
+            <h3 class="sub-title fw-normal text-dark mt-2 mb-4 mb-lg-3">
+              <span class="fw-bold d-inline-block me-2">T-Shirt </span>for those of you who want to be contemporary
+            </h3>
+            <p class="description text-medium-dark-color mb-0">
+              Design for those of you who want to be contemporary.
+            </p>
+            <a href="#" class="btn btn-primary text-capitalize text-white fw-smb rounded-0 my-5 mb-lg-0">
+              <div class="d-flex align-items-center">
+                <span>check it now</span>
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="collection-image col-lg-6 mt-lg-auto">
+          <img src="media/imgs/collection/collection.jpg" alt="collection" class="img-fluid d-block mx-auto ms-lg-auto">
+        </div>
+      </div>
+    </div>
 
-  <!-- Just For Test Project Set Up  -->
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
+  </section>
+  <!-- End The Collection Section  -->
+
+
+  <div style="border:1px solid red;">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
   </div>
-  <i class="fa-solid fa-a fa-3x text-primary"></i>
-
-
   <!-- Bootstrap Js -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome Js -->
   <script src="js/all.min.js"></script>
+  <!-- Main Script -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

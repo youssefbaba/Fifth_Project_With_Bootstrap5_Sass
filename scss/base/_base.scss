@@ -1,0 +1,32 @@
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
+
+
+body {
+  font: {
+    family: 'Open Sans', sans-serif;
+  }
+}
+
+.fw-smb {
+  font: {
+    weight: $font-weight-semibold !important;
+  }
+}
+
+.lh-md {
+  line: {
+    height: $line-height-medium !important;
+  }
+}
+
+.center-flex {
+  @include center-flex;
+}
+
+.center-position-absolute {
+  @include center-position-absolute;
+}
+
+@include gen-bg-or-text-color("bg", "background-color");
+@include gen-bg-or-text-color("text", "color")

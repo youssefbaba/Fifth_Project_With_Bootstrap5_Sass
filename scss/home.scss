@@ -8,8 +8,6 @@
 
 // 2. Vendors
 @use "vendors/bootstrap";
-@use "vendors/font-awesome";
-
 
 
 // 3. Base stuff
@@ -26,6 +24,7 @@
 
 
 // 5. Components
+@use "components/head-section";
 @use "components/button";
 @use "components/carousel";
 @use "components/alert";

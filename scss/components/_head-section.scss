@@ -1,0 +1,33 @@
+@use "../vendors/bootstrap"as *;
+@use "../../node_modules/sass-rem/rem"as *;
+
+/* Start The Compenent Head Section */
+.head-section {
+  .title {
+    font: {
+      size: $font-size-base;
+    }
+
+    letter: {
+      spacing: 1px;
+    }
+  }
+
+  .sub-title {
+    font: {
+      size: rem(32px);
+    }
+
+    letter: {
+      spacing: -0.5px;
+    }
+  }
+
+  .description {
+    line: {
+      height: 1.8 !important;
+    }
+  }
+}
+
+/* End The Compenent Head Section */
