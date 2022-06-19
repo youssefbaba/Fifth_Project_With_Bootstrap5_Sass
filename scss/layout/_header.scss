@@ -44,6 +44,12 @@
         font: {
           family: 'Ubuntu', sans-serif;
         }
+
+        @include media-breakpoint-down(lg) {
+          line: {
+            height: 2 !important;
+          }
+        }
       }
     }
 
@@ -76,10 +82,6 @@
 
           @include media-breakpoint-up(lg) {
             width: calc(100% / 4);
-
-            margin: {
-              right: 0;
-            }
 
             padding: {
               top: rem(40px) !important;

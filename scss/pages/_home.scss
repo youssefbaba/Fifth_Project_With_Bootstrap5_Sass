@@ -6,7 +6,7 @@
 /* Start Tha Products Section */
 .products {
   padding: {
-    top: rem(120px);
+    top: $gap-top-section;
   }
 
   &-choices {
@@ -83,7 +83,7 @@
         }
 
         font: {
-          size: rem(14px);
+          size: $font-size-small;
         }
 
         letter: {
@@ -115,8 +115,14 @@
 /* End Tha Products Section */
 /* Start The Collection Section */
 .collection {
+  .container:nth-child(2) {
+    background: {
+      clip: content-box;
+    }
+  }
+
   padding: {
-    top: rem(120px);
+    top: $gap-top-section;
   }
 
   .head-section {
@@ -137,19 +143,14 @@
     }
   }
 
-  &-info {
+  &-new-arrivals,
+  &-featured,
+  &-trending {
     .head-section {
-      @include media-breakpoint-up(lg) {
-        padding: {
-          top: rem(84px) !important;
-          left: rem(67px) !important;
-        }
-      }
-
       .title {
         @include media-breakpoint-down(lg) {
           font: {
-            size: rem(14px);
+            size: $font-size-small;
           }
         }
       }
@@ -160,13 +161,26 @@
         }
 
         line: {
-          height: 1.8;
+          height: $line-height-medium;
         }
 
         letter: {
           spacing: normal;
         }
+      }
+    }
+  }
 
+  &-new-arrivals {
+    .head-section {
+      @include media-breakpoint-up(lg) {
+        padding: {
+          top: rem(84px) !important;
+          left: rem(67px) !important;
+        }
+      }
+
+      .sub-title {
         @include media-breakpoint-up(lg) {
           font: {
             size: rem(36px);
@@ -188,7 +202,38 @@
     img {
       @include media-breakpoint-up(lg) {
         margin: {
-          right: -0.75rem !important;
+          right: 0 !important;
+        }
+      }
+    }
+  }
+
+  &-featured,
+  &-trending {
+    .head-section {
+      padding: {
+        left: rem(38px);
+        bottom: rem(92px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: {
+          top: rem(55px) !important;
+          bottom: rem(55px);
+        }
+      }
+
+      .sub-title {
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(32px);
+          }
+        }
+      }
+
+      .description {
+        line: {
+          height: $line-height-medium !important;
         }
       }
     }
@@ -196,3 +241,280 @@
 }
 
 /* End The Collection Section */
+/* Start The Sugested Today Section */
+.sugested-today {
+  padding: {
+    top: $gap-top-section;
+  }
+
+  .head-section {
+    .description {
+      line: {
+        height: 2 !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max: {
+          width: rem(420px);
+        }
+      }
+
+      &.special {
+        margin: {
+          bottom: rem(32px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: {
+            bottom: rem(56px);
+          }
+        }
+      }
+    }
+  }
+
+  .carousel {
+    &-item {
+      padding: {
+        bottom: rem(40px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: calc(100% / 2);
+      }
+
+      @include media-breakpoint-up(xl) {
+        width: calc(100% / 3);
+      }
+    }
+
+    .card {
+      .first-col {
+        padding: {
+          right: 0.75rem;
+        }
+      }
+
+      .second-col {
+        padding: {
+          left: 0.75rem;
+        }
+      }
+
+      &-body {
+        .type {
+          font: {
+            size: $font-size-small;
+          }
+        }
+
+        .title-type {
+          line: {
+            height: $line-height-medium;
+          }
+        }
+
+        .stars {
+          svg {
+            width: rem(14px);
+            height: rem(14px);
+          }
+        }
+
+        .price,
+        .title-type {
+          font: {
+            size: $font-size-medium;
+          }
+        }
+      }
+    }
+  }
+
+  .link {
+    &:hover {
+      color: $white !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: {
+        top: rem(56px) !important;
+      }
+    }
+  }
+}
+
+/* Start The Sugested Today Section */
+/* Start Tha Blog Section */
+.blog {
+  padding: {
+    top: $gap-top-section;
+  }
+
+  .head-section {
+    .description {
+      line: {
+        height: 2 !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max: {
+          width: rem(339px);
+        }
+      }
+
+      &.special {
+        margin: {
+          bottom: rem(32px);
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: {
+            bottom: rem(56px);
+          }
+        }
+      }
+    }
+  }
+
+  .carousel {
+    &-item {
+      padding: {
+        bottom: rem(32px);
+      }
+    }
+  }
+
+  &-item {
+    .card {
+      &-body {
+        padding: {
+          top: rem(18px) !important;
+        }
+
+        .title-blog {
+          font: {
+            size: rem(20px);
+          }
+
+          &.horizontal {
+            @include media-breakpoint-up(lg) {
+              font: {
+                size: $font-size-base;
+              }
+            }
+          }
+        }
+
+        .description-blog {
+          font: {
+            size: $font-size-small;
+          }
+        }
+      }
+    }
+  }
+
+  .horizontal-blogs {
+    .blog-item {
+      &:not(:last-child) {
+        margin: {
+          bottom: $gap;
+        }
+      }
+
+      .card-body {
+        @include media-breakpoint-up(lg) {
+          padding: {
+            top: 0.5rem !important;
+          }
+        }
+
+        @include media-breakpoint-up(xxl) {
+          padding: {
+            right: 2rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Tha Blog Section */
+/* Start The Contact Section */
+.contact {
+  padding: {
+    top: $gap-top-section;
+    bottom: $gap-top-section;
+  }
+
+  .container {
+    padding: {
+      top: rem(60px);
+      bottom: rem(60px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: {
+        top: rem(56px);
+        bottom: rem(56px);
+      }
+    }
+
+    .head-section {
+      .sub-title {
+        @include media-breakpoint-down(lg) {
+          line: {
+            height: 1.75 !important;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          font: {
+            size: rem(40px);
+          }
+        }
+      }
+    }
+
+    .form {
+      margin: {
+        top: rem(32px);
+      }
+
+      input[type="email"] {
+        caret-color: $medium-color;
+
+        padding: {
+          top: rem(22px);
+          bottom: rem(22px);
+        }
+      }
+
+      ::placeholder {
+        color: $medium-color;
+        text-transform: capitalize;
+
+        line: {
+          height: $line-height-medium;
+        }
+      }
+
+      .send {
+        width: rem(50px);
+        height: rem(50px);
+      }
+
+      .subscribe,
+      .send {
+        right: 0.5rem;
+      }
+
+      .email {
+        left: 1rem;
+      }
+    }
+  }
+}
+
+/* End The Contact Section */

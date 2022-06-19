@@ -14,6 +14,12 @@ body {
   }
 }
 
+.lh-sm {
+  line: {
+    height: $line-height-small !important;
+  }
+}
+
 .lh-md {
   line: {
     height: $line-height-medium !important;

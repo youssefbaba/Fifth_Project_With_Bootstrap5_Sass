@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /* Declaration Colors */
+/* Decalration Spacing  Variables */
 /* Declaration Font Property */
 /* Map Of Background Colors */
+/* Map Of Text Colors */
 /* Transition Mixin */
 /* Ganerate Background Colors */
 /* Center With Flex */
@@ -11197,8 +11199,12 @@ body {
   font-weight: 600 !important;
 }
 
-.lh-md {
+.lh-sm {
   line-height: 1.36 !important;
+}
+
+.lh-md {
+  line-height: 1.8 !important;
 }
 
 .center-flex {
@@ -11222,12 +11228,32 @@ body {
   background-color: #969696 !important;
 }
 
+.bg-maui-mist {
+  background-color: #f0f1f3 !important;
+}
+
+.bg-white-smoke {
+  background-color: #F5F5F5 !important;
+}
+
+.bg-titanium-white {
+  background-color: #e4e4e4 !important;
+}
+
+.bg-light-house {
+  background-color: #f4f4f4 !important;
+}
+
 .text-medium-color {
   color: #969696 !important;
 }
 
 .text-medium-dark-color {
   color: #646464 !important;
+}
+
+.text-light-house {
+  color: #f4f4f4 !important;
 }
 
 /* Start The Section Header */
@@ -11246,12 +11272,17 @@ body {
 @media (min-width: 992px) {
   .header .landing .head-section .sub-title {
     font-size: 3.75rem;
-    line-height: 1.36;
+    line-height: 1.8;
     margin-bottom: 2rem;
   }
 }
 .header .landing .head-section .description {
   font-family: "Ubuntu", sans-serif;
+}
+@media (max-width: 991.98px) {
+  .header .landing .head-section .description {
+    line-height: 2 !important;
+  }
 }
 @media (min-width: 992px) {
   .header .landing .info {
@@ -11272,7 +11303,6 @@ body {
 @media (min-width: 992px) {
   .header .landing .advantage .carousel-item {
     width: 25%;
-    margin-right: 0;
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem;
   }
@@ -11351,6 +11381,62 @@ body {
 }
 
 /* End Navigation Bar */
+/* Start The Footer Section */
+footer {
+  padding-top: 3.75rem;
+}
+footer .description {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991.98px) {
+  footer .description {
+    line-height: 1.8 !important;
+    margin-top: 1.4375rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  footer .media {
+    gap: 1.3125rem !important;
+  }
+}
+footer .media-link {
+  width: 2rem;
+  height: 2rem;
+}
+footer h4 {
+  font-size: 1rem;
+  line-height: 1;
+}
+footer .links,
+footer .about {
+  margin-bottom: 5.5rem;
+}
+footer .links li a,
+footer .about li a {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+footer .office {
+  margin-bottom: 1.1875rem;
+}
+footer .first-support,
+footer .second-support {
+  font-size: 0.875rem;
+}
+footer .copyright {
+  margin-top: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.875rem;
+}
+@media (min-width: 992px) {
+  footer .copyright {
+    margin-top: 4.6875rem;
+  }
+}
+
+/* End The Footer Section */
 /* Start The Compenent Head Section */
 .head-section .title {
   font-size: 1rem;
@@ -11404,6 +11490,22 @@ body {
   border-color: #6bb75d;
 }
 
+/* Start The Compenent Carousel */
+@media (min-width: 992px) {
+  .carousel-item {
+    margin-right: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+.carousel-indicators [data-bs-target] {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.carousel-indicators button.active {
+  background-color: #34C3A0 !important;
+}
+
+/* End The Compenent Carousel */
 /* Start Tha Products Section */
 .products {
   padding-top: 7.5rem;
@@ -11471,6 +11573,9 @@ body {
 .collection {
   padding-top: 7.5rem;
 }
+.collection .container:nth-child(2) {
+  background-clip: content-box;
+}
 .collection .head-section {
   margin-bottom: 2rem;
 }
@@ -11484,38 +11589,222 @@ body {
     max-width: 26.25rem;
   }
 }
-@media (min-width: 992px) {
-  .collection-info .head-section {
-    padding-top: 5.25rem !important;
-    padding-left: 4.1875rem !important;
-  }
-}
 @media (max-width: 991.98px) {
-  .collection-info .head-section .title {
+  .collection-new-arrivals .head-section .title, .collection-featured .head-section .title, .collection-trending .head-section .title {
     font-size: 0.875rem;
   }
 }
-.collection-info .head-section .sub-title {
+.collection-new-arrivals .head-section .sub-title, .collection-featured .head-section .sub-title, .collection-trending .head-section .sub-title {
   font-size: 1.25rem;
   line-height: 1.8;
   letter-spacing: normal;
 }
 @media (min-width: 992px) {
-  .collection-info .head-section .sub-title {
+  .collection-new-arrivals .head-section {
+    padding-top: 5.25rem !important;
+    padding-left: 4.1875rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .collection-new-arrivals .head-section .sub-title {
     font-size: 2.25rem;
   }
 }
 @media (min-width: 992px) {
-  .collection-info .head-section .description {
-    line-height: 1.36 !important;
+  .collection-new-arrivals .head-section .description {
+    line-height: 1.8 !important;
   }
 }
 @media (min-width: 992px) {
   .collection-image img {
-    margin-right: -0.75rem !important;
+    margin-right: 0 !important;
   }
+}
+.collection-featured .head-section, .collection-trending .head-section {
+  padding-left: 2.375rem;
+  padding-bottom: 5.75rem;
+}
+@media (min-width: 992px) {
+  .collection-featured .head-section, .collection-trending .head-section {
+    padding-top: 3.4375rem !important;
+    padding-bottom: 3.4375rem;
+  }
+}
+@media (min-width: 992px) {
+  .collection-featured .head-section .sub-title, .collection-trending .head-section .sub-title {
+    font-size: 2rem;
+  }
+}
+.collection-featured .head-section .description, .collection-trending .head-section .description {
+  line-height: 1.8 !important;
 }
 
 /* End The Collection Section */
+/* Start The Sugested Today Section */
+.sugested-today {
+  padding-top: 7.5rem;
+}
+.sugested-today .head-section .description {
+  line-height: 2 !important;
+}
+@media (min-width: 992px) {
+  .sugested-today .head-section .description {
+    max-width: 26.25rem;
+  }
+}
+.sugested-today .head-section .description.special {
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .sugested-today .head-section .description.special {
+    margin-bottom: 3.5rem;
+  }
+}
+.sugested-today .carousel-item {
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 992px) {
+  .sugested-today .carousel-item {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .sugested-today .carousel-item {
+    width: 33.3333333333%;
+  }
+}
+.sugested-today .carousel .card .first-col {
+  padding-right: 0.75rem;
+}
+.sugested-today .carousel .card .second-col {
+  padding-left: 0.75rem;
+}
+.sugested-today .carousel .card-body .type {
+  font-size: 0.875rem;
+}
+.sugested-today .carousel .card-body .title-type {
+  line-height: 1.8;
+}
+.sugested-today .carousel .card-body .stars svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.sugested-today .carousel .card-body .price,
+.sugested-today .carousel .card-body .title-type {
+  font-size: 1.125rem;
+}
+.sugested-today .link:hover {
+  color: #fff !important;
+}
+@media (min-width: 992px) {
+  .sugested-today .link {
+    margin-top: 3.5rem !important;
+  }
+}
+
+/* Start The Sugested Today Section */
+/* Start Tha Blog Section */
+.blog {
+  padding-top: 7.5rem;
+}
+.blog .head-section .description {
+  line-height: 2 !important;
+}
+@media (min-width: 992px) {
+  .blog .head-section .description {
+    max-width: 21.1875rem;
+  }
+}
+.blog .head-section .description.special {
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .blog .head-section .description.special {
+    margin-bottom: 3.5rem;
+  }
+}
+.blog .carousel-item {
+  padding-bottom: 2rem;
+}
+.blog-item .card-body {
+  padding-top: 1.125rem !important;
+}
+.blog-item .card-body .title-blog {
+  font-size: 1.25rem;
+}
+@media (min-width: 992px) {
+  .blog-item .card-body .title-blog.horizontal {
+    font-size: 1rem;
+  }
+}
+.blog-item .card-body .description-blog {
+  font-size: 0.875rem;
+}
+.blog .horizontal-blogs .blog-item:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 992px) {
+  .blog .horizontal-blogs .blog-item .card-body {
+    padding-top: 0.5rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .blog .horizontal-blogs .blog-item .card-body {
+    padding-right: 2rem !important;
+  }
+}
+
+/* End Tha Blog Section */
+/* Start The Contact Section */
+.contact {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+.contact .container {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (min-width: 992px) {
+  .contact .container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .contact .container .head-section .sub-title {
+    line-height: 1.75 !important;
+  }
+}
+@media (min-width: 992px) {
+  .contact .container .head-section .sub-title {
+    font-size: 2.5rem;
+  }
+}
+.contact .container .form {
+  margin-top: 2rem;
+}
+.contact .container .form input[type=email] {
+  caret-color: #969696;
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+.contact .container .form ::placeholder {
+  color: #969696;
+  text-transform: capitalize;
+  line-height: 1.8;
+}
+.contact .container .form .send {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.contact .container .form .subscribe,
+.contact .container .form .send {
+  right: 0.5rem;
+}
+.contact .container .form .email {
+  left: 1rem;
+}
+
+/* End The Contact Section */
 
 /*# sourceMappingURL=home.css.map */

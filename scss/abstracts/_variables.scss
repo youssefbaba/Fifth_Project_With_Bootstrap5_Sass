@@ -5,17 +5,35 @@ $medium-dark-color:#646464;
 $orange-color:#FF7020;
 $zappy-zebra :#F1F2F3;
 $drop-green :#6bb75d;
+$maui-mist: #f0f1f3;
+$white-smoke : #F5F5F5;
+$titanium-white :#e4e4e4;
+$light-house:#f4f4f4;
 
+
+/* Decalration Spacing  Variables */
+$gap: rem(30px);
+$gap-top-section : rem(120px);
 
 
 /* Declaration Font Property */
+$font-size-small: rem(14px);
 $font-size-medium: rem(18px);
-$line-height-medium : 1.36;
+$line-height-small : 1.36;
+$line-height-medium : 1.8;
 $font-weight-semibold:600;
 
 
 /* Map Of Background Colors */
 $color-bg:(zappy-zebra :$zappy-zebra,
-  medium-color :$medium-color);
+  medium-color :$medium-color,
+  maui-mist:$maui-mist,
+  white-smoke : $white-smoke,
+  titanium-white :$titanium-white,
+  light-house: $light-house);
+
+
+/* Map Of Text Colors */
 $color-text:(medium-color :$medium-color,
-  medium-dark-color:$medium-dark-color, );
+  medium-dark-color:$medium-dark-color,
+  light-house:$light-house);

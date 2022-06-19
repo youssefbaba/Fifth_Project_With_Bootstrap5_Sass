@@ -1,0 +1,106 @@
+@use "../abstracts/variables"as *;
+@use "../vendors/bootstrap"as *;
+@use "../../node_modules/sass-rem/rem"as *;
+
+/* Start The Footer Section */
+footer {
+  padding: {
+    top: calc($gap-top-section / 2);
+  }
+
+  .description {
+    font: {
+      family: 'Ubuntu', sans-serif;
+    }
+
+    @include media-breakpoint-down(lg) {
+      line: {
+        height: $line-height-medium !important;
+      }
+
+      margin: {
+        top: rem(23px);
+        bottom: rem(40px);
+      }
+    }
+
+    margin: {
+      bottom: rem(32px);
+    }
+  }
+
+  .media {
+    @include media-breakpoint-down(lg) {
+      gap: rem(21px) !important;
+    }
+
+    &-link {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  h4 {
+    font: {
+      size: $font-size-base;
+    }
+
+    line: {
+      height: 1;
+    }
+  }
+
+  .links,
+  .about {
+    margin: {
+      bottom: rem(88px);
+    }
+
+    li {
+      a {
+        font: {
+          size: $font-size-small;
+        }
+
+        line: {
+          height: 1;
+        }
+      }
+    }
+  }
+
+  .office {
+    margin: {
+      bottom: rem(19px);
+    }
+  }
+
+  .first-support,
+  .second-support {
+    font: {
+      size: $font-size-small;
+    }
+  }
+
+  .copyright {
+    margin: {
+      top: rem(40px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: {
+        top: rem(75px);
+      }
+    }
+
+    font: {
+      family: 'Ubuntu', sans-serif;
+    }
+
+    font: {
+      size: $font-size-small;
+    }
+  }
+}
+
+/* End The Footer Section */
